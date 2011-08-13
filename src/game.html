@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://jqueryui.com/themes/base/jquery.ui.all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/jquery-ui.min.js"></script>
+    <title>El-Tetris</title>
+    <script src="renderer.js"></script>
+    <script src="pieces.js"></script>
+    <script src="features.js"></script>
+    <script src="eltetris.js"></script>
+    <style>
+      body {
+        font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+        font-size: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>El-Tetris</h1>
+    <div>
+    <div style="float: left;">
+    <canvas id="board" width="230" height="420">
+      Your browser doesn't support HTML canvas.
+    </canvas>
+    </div>
+
+    <div style="float: auto;">
+      <p>
+        <label for="num_columns">Number of columns:</label>
+        <input type="text" id="num_columns"
+            style="border:0; color:#f6931f; font-weight:bold; background-color: #FFFFFF;" disabled="disabled"/>
+        <div id="num_column_slider" style="width: 250px; position: relative; left: 230px;"></div>
+      </p>
+      <p>
+        <label for="num_rows">Number of rows:</label>
+        <input type="text" id="num_rows"
+            style="border:0; color:#f6931f; font-weight:bold; background-color: #FFFFFF;" disabled="disabled"/>
+        <div id="num_row_slider" style="width: 250px; position: relative; left: 230px;"></div>
+      </p>
+      <p>
+        <label for="speed">Speed:</label>
+        <input type="text" id="speed"
+            style="border:0; color:#f6931f; font-weight:bold; background-color: #FFFFFF;" disabled="disabled"/>
+        <div id="speed_slider" style="width: 250px; position: relative; left: 230px;"></div>
+      </p>
+    </div>
+
+    <div>
+      <button id="play">play</button>
+      <button id="stop">stop</button>
+      <input type="checkbox" id="hardcore" /><label for="hardcore" id="hardcore_label" style="width: 175px;">Hardcore Mode</label>
+    </div>
+
+    <p><span id="score" style="font-size: 400%;">0</span> rows cleared.</p>
+    </div>
+    <script src="game_html.js"></script>
+  </body>
+</html>
