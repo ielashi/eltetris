@@ -1,0 +1,7 @@
+A Javascript + HTML5 implementation of El-Tetris
+
+A demo is provided at:
+  - http://ielashi.com/el-tetris-in-html5/
+  - src/game.html
+
+JsTestDriver can be used to run the tests.
