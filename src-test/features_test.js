@@ -42,3 +42,10 @@ FeaturesTest.prototype.testNumberOfHoles = function() {
   assertEquals(GetNumberOfHoles(board, 5), 5);
 };
 
+FeaturesTest.prototype.testWellSums1 = function() {
+  var board = [parseInt('101', 2),
+               parseInt('101', 2),
+               parseInt('101', 2)];
+
+  assertEquals(GetWellSums(board, 3), 6);
+};
